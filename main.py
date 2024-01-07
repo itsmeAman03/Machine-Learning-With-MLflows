@@ -9,8 +9,8 @@ STAGE_NAME = "Data Ingestion Stage"
 
 try:
     logger.info(f">>>>>> Stage {STAGE_NAME} Started <<<<<<")
-    obj = DataIngestionTrainingPipeline()
-    obj.main()
+    data_ingestion = DataIngestionTrainingPipeline()
+    data_ingestion.main()
     logger.info(f">>>>>> Stage {STAGE_NAME} Completed <<<<<<\n\nX-----------------X")
 except Exception as e:
     logger.exception("f An error occurred while executing the Data Ingest stage.\n {e}")
@@ -22,8 +22,8 @@ STAGE_NAME = "Data Validation Stage"
 
 try:
     logger.info(f">>>>>> Stage {STAGE_NAME} Started <<<<<<")
-    obj = DataValidationTrainingPipeline()
-    obj.main()
+    data_validation = DataValidationTrainingPipeline()
+    data_validation.main()
     logger.info(f">>>>>> Stage {STAGE_NAME} Completed <<<<<<\n\nX-----------------X")
 except Exception as e:
     logger.exception("f An error occurred while executing the Data Ingest stage.\n {e}")
@@ -33,8 +33,9 @@ STAGE_NAME = "Data Tranformation Stage"
 
 try:
     logger.info(f">>>>>> Stage {STAGE_NAME} Started <<<<<<")
-    obj = DataTransformationTrainingPipeline()
-    obj.main()
+    data_transform = DataTransformationTrainingPipeline()
+    data_transform.main()
     logger.info(f">>>>>> Stage {STAGE_NAME} Completed <<<<<<\n\nX-----------------X")
 except Exception as e:
     logger.exception("f An error occurred while executing the Data Ingest stage.\n {e}")
+    raise e
