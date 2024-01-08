@@ -167,6 +167,23 @@ export MLFLOW_TRACKING_PASSWORD=514907432d019f32917391c0128fcca6a593fdf1
 
 
 
+# ScreenShot of the project Insights
+
+1. Form of the Model which takes input for prediction to be made
+![form-model][images/form.png]
+
+2. Prediction that we made from above inputs
+![prediction][images/prediction.png]
+
+3. We found the best parameter for our ElasticNet linear model for which mae and rmse should be low and r2 score should be high and it was alpha = 0.2 and l1_ration = 0.9 . It was done one dagshub/
+![prameters][images/params.png]
+
+4. CI/CD progress which was done on AWS EC2 Machine
+![cicd][images/cicd.png]
+
+5. After deploying the Project on EC2 machine and using docker our form page on public link
+![publiclink][images/epic.png]
+
 
 ## About MLflow 
 MLflow
