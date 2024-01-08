@@ -169,8 +169,8 @@ export MLFLOW_TRACKING_PASSWORD=514907432d019f32917391c0128fcca6a593fdf1
 
 # ScreenShot of the project Insights
 
-1. Form of the Model which takes input for prediction to be made
-![form-model][https://github.com/itsmeAman03/Machine-Learning-With-MLflows/blob/main/images/form.png]
+1. Form of the Model which takes input for prediction to be made 
+![form-model](https://github.com/itsmeAman03/Machine-Learning-With-MLflows/blob/main/images/form.png)
 
 2. Prediction that we made from above inputs
 ![prediction][./images/prediction.png]
