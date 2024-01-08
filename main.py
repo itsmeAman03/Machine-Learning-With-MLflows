@@ -3,6 +3,7 @@ from mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipe
 from mlProject.pipeline.stage_02_data_validation import DataValidationTrainingPipeline
 from mlProject.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline
 from mlProject.pipeline.stage_04_model_trainer import ModelTrainerTrainingPipeline
+from mlProject.pipeline.stage_05_model_evaluation import ModelEvaluationTrainingPipeline
 # we could also use src.mlProject rather than only mlProject
 
 
@@ -48,6 +49,17 @@ try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
     model_train = ModelTrainerTrainingPipeline()
     model_train.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+    logger.exception("f An error occurred while executing the Data Ingest stage.\n {e}")
+    raise e
+
+STAGE_NAME="Model Evaluation Stage"
+
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    model_eval = ModelEvaluationTrainingPipeline()
+    model_eval.main()
     logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
     logger.exception("f An error occurred while executing the Data Ingest stage.\n {e}")
