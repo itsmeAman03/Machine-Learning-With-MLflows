@@ -78,7 +78,7 @@ open up your local hosh and port
 
 MLFLOW_TRACKING_URI=https://dagshub.com/itsmeAman03/Machine-Learning-With-MLflows.mlflow \
 MLFLOW_TRACKING_USERNAME=itsmeAman03 \
-MLFLOW_TRACKING_PASSWORD=514907432d019f32917391c0128fcca6a593fdf1 \
+MLFLOW_TRACKING_PASSWORD=<PASSWORD> \
 python script.py
 
 Run this to export as env variables:
@@ -88,7 +88,7 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/itsmeAman03/Machine-Learning-With
 
 export MLFLOW_TRACKING_USERNAME=itsmeAman03
 
-export MLFLOW_TRACKING_PASSWORD=514907432d019f32917391c0128fcca6a593fdf1
+export MLFLOW_TRACKING_PASSWORD=<PASSWORD>
 
 ```
 
@@ -155,9 +155,9 @@ export MLFLOW_TRACKING_PASSWORD=514907432d019f32917391c0128fcca6a593fdf1
 
 # 7. Setup github secrets:
 
-    AWS_ACCESS_KEY_ID=
+    AWS_ACCESS_KEY_ID= <YOUR_ACCESS_KEY>
 
-    AWS_SECRET_ACCESS_KEY=
+    AWS_SECRET_ACCESS_KEY= <YOUR_SECRETS>
 
     AWS_REGION = ap-south-1
 
